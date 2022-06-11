@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<section class="contact-area" id="contact">
+    <div class="container-fluid">
+        <div class="row align-items-center d-flex justify-content-start">
+            <div class="col-lg-6 col-md-12 contact-left no-padding">
+                  <div style=" width:100%;
+        height: 545px;" ></div>
+            </div>
+            <div class="col-lg-4 col-md-12 pt-100 pb-100">
+               
+                <form class="form-area" method='POST' class="contact-form text-right" action="/update/{{offer.id}}">
+                 
+                    {% csrf_token %}
+                        <h5> title</h5>
+                        <input class="common-input mt-10" type="text" name="title" required value="{{offer.title}}">
+                   
+                    
+                        <h5> description_short</h5>
+                        <input class="common-input mt-10" type="text" name="describe_short" required value="{{offer.describe_short}}">
+                   
+                    
+                        <h5> description_long</h5>
+                        <textarea class="common-input mt-10" name='describe_long' required >{{offer.describe_long}}</textarea>
+                   
+                    
+                        <button class='btn btn-primary'>update</button>
+                   
+                </form>
+               <div> <a class='btn btn-update' href="{% url 'show' %}">Show Data</a>
+            </div>
+        </div>
+    </div>
+</section>
+    {% endblock content %}

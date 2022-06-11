@@ -1,0 +1,181 @@
+
+
+
+
+.btn{
+    cursor: pointer;
+}
+
+
+
+
+.container_inputs input[type="text"]{
+    border: none;
+    font-size: 100%;
+    outline: none;
+    width: 500px;
+    border-bottom: 1px solid rgb(102, 99, 99);
+
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1774bf;
+    border-radius: 5px;
+    cursor: pointer;
+    font=size: 17px;
+}
+
+
+.button{
+    padding: 2px 6px 2px 6px;
+    border: none;
+    color: #33333;
+    background-color: #EEEEEE;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #33333;
+    border-right: 1px solid #33333;
+    border-top: 1px solid #cccccc;
+    font:bold 11px Arial;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover{
+    background-color: #0e4d81;
+}
+
+
+.window{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00000047;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog{
+    margin: auto;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: -webkit-fill-available;
+    transform: scale(1);
+    animation-name: animDialog;
+    animation-duration: 0.25s;
+    -webkit-animation-name: animDialog;
+    -webkit-animation-duration: 0.25s;
+}
+
+@keyframes animDialog{
+    form {
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes animDialog{
+    form {
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.dialog .btns{
+    justify-content: unset;
+    width: -webkit-fill-available;
+    direction: rtl;
+}
+
+.title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hint{
+    font-size: 13px;
+    color: #93a4ad;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#verification {
+    display: none;
+}
+
+.message{
+    display: none;
+    text-align: center;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.message p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.show{
+    display: block;
+}
+
+.main-about{
+    margin: auto;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+
+}
+
+.about-content{
+    max-width: 500px;
+    width: 70%;
+}
+
+.about-logo{
+    width: 30%;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-about h1{
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 4px solid #504080;
+    display: inline-block;
+}
+
+svg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -125px;
+}
